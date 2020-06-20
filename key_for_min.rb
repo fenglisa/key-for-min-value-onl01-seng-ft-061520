@@ -11,13 +11,13 @@ def key_for_min_value(name_hash)
   while i < numbers.length
     if numbers[i] < numbers[i+1]
       qualify << numbers[i]
-    elsif values[i] > values[i+1]
-      qualify << values[i+1]
+    elsif numbers[i] > numbers[i+1]
+      qualify << numbers[i+1]
     end
     i+=1
   end
   qualify.last
-  name_hash.collect do |item,value|
+  name_hash.collect do |item,number|
     if name_hash[item] == qualify.last
       return item
     end
