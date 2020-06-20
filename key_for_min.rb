@@ -15,7 +15,7 @@ def key_for_min_value(name_hash)
     elsif numbers[i] > numbers[i+1]
       qualify << numbers[i+1]
     end
-    i+=1
+   
   end
   qualify.last
   
