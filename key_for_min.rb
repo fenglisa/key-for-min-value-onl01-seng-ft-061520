@@ -3,9 +3,10 @@
 require "pry"
 
 def key_for_min_value(name_hash)
-  if name_hash = {}
+  if name_hash == {}
     return nil
   end
+  
   numbers = []
   qualify = []
   numbers << name_hash.collect {|item,number| number}
@@ -26,5 +27,6 @@ def key_for_min_value(name_hash)
     if name_hash[item] == qualify.last
       return item
     end
+    binding.pry
   end
 end
