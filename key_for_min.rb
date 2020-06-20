@@ -16,6 +16,7 @@ def key_for_min_value(name_hash)
       qualify << numbers[i+1]
     end
     i+=1
+    binding.pry
   end
   qualify.last
   
