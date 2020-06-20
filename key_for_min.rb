@@ -5,11 +5,11 @@ require "pry"
 def key_for_min_value(name_hash)
   numbers = []
   qualify = []
-  i = 0
   numbers << name_hash.collect {|item,number| number}
   numbers = numbers[0]
   binding.pry
   while i < numbers.length
+    i = 0
     if numbers[i] < numbers[i+1]
       qualify << numbers[i]
     elsif numbers[i] > numbers[i+1]
