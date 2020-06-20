@@ -19,7 +19,9 @@ def key_for_min_value(name_hash)
     end
     i+=1
   end
-  qualify.last
+  if qualify == []
+    qualify << numbers.last
+  end
  
   name_hash.collect do |item,number|
     if name_hash[item] == qualify.last
