@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   numbers = numbers[0]
   
   i = 0
-  while i < numbers.length
+  while i < numbers.length - 1
     if numbers[i] < numbers[i+1]
       qualify << numbers[i]
     elsif numbers[i] > numbers[i+1]
@@ -18,7 +18,7 @@ def key_for_min_value(name_hash)
     i+=1
   end
   qualify.last
-  binding.pry
+ 
   name_hash.collect do |item,number|
     if name_hash[item] == qualify.last
       return item
