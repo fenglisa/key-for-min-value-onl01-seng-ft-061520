@@ -27,6 +27,5 @@ def key_for_min_value(name_hash)
     if name_hash[item] == qualify.last
       return item
     end
-    binding.pry
   end
 end
