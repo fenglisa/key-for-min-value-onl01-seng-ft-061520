@@ -8,8 +8,8 @@ def key_for_min_value(name_hash)
   numbers << name_hash.collect {|item,number| number}
   numbers = numbers[0]
   binding.pry
+  i = 0
   while i < numbers.length
-    i = 0
     if numbers[i] < numbers[i+1]
       qualify << numbers[i]
     elsif numbers[i] > numbers[i+1]
