@@ -18,7 +18,7 @@ def key_for_min_value(name_hash)
     i+=1
   end
   qualify.last
-  binding.pry
+  
   name_hash.collect do |item,number|
     if name_hash[item] == qualify.last
       return item
